@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "540328317564",
+    "firebase_url": "https://agrofer-7fdd3-default-rtdb.firebaseio.com",
+    "project_id": "agrofer-7fdd3",
+    "storage_bucket": "agrofer-7fdd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540328317564:android:a65add51ba065aee996ff9",
+        "android_client_info": {
+          "package_name": "aplimovil.agrofer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540328317564-9thfl6930qi6njqk0sjd3a6hitig9erh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzyKBijNOjy8amu5n0Vnp9IGMKKmZXhVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540328317564-9thfl6930qi6njqk0sjd3a6hitig9erh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540328317564:android:22291ac52b771c1b996ff9",
+        "android_client_info": {
+          "package_name": "edu.unicauca.agrofer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540328317564-9thfl6930qi6njqk0sjd3a6hitig9erh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzyKBijNOjy8amu5n0Vnp9IGMKKmZXhVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540328317564-9thfl6930qi6njqk0sjd3a6hitig9erh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
