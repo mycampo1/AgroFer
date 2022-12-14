@@ -1,16 +1,17 @@
 package edu.unicauca.agrofer;
 
 public class ListElement {
-    public String imgPrincipal;
+
     public String color;
     public String name;
     public String puntaje;
+    public String imgUrl;
 
-    public ListElement(String color, String name, String puntaje) {
+    public ListElement(String color, String name, String puntaje, String imgUrl) {
         this.color = color;
         this.name = name;
         this.puntaje = puntaje;
-        this.imgPrincipal = imgPrincipal;
+        this.imgUrl = imgUrl;
     }
 
 
@@ -38,11 +39,12 @@ public class ListElement {
         this.puntaje = puntaje;
     }
 
-    public String getImgPrincipal() {
-        return imgPrincipal;
+    public String getImgUrl() {
+        return imgUrl;
     }
 
-    public void setImgPrincipal(String imgPrincipal) {
-        this.imgPrincipal = imgPrincipal;
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
+
 }

@@ -33,7 +33,8 @@ public class TiendaFragment extends Fragment {
         super.onViewCreated(view, saveInstanceState);
 
         elements = new ArrayList<>();
-        elements.add(new ListElement("#775447", "Tienda agro","4.8"));
+        elements.add(new ListElement("#775447", "Tienda agro","4.8",""));
+        elements.add(new ListElement("#FFE900", "Electroluz","5.0","https://comerciodecolombia.com/wp-content/uploads/electrl20201.jpg"));
 
         ListAdapter listAdapter = new ListAdapter(elements, this.getContext());
         RecyclerView recyclerView = view.findViewById(R.id.recicleView);

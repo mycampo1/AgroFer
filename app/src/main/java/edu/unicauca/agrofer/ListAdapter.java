@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
@@ -41,13 +43,12 @@ public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     public void setItem(List<ListElement> items) { mData = items;}
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-
         ImageView iconStar, imgPrincipal;
         TextView name, puntaje;
 
         ViewHolder(View itemView){
             super(itemView);
-            imgPrincipal = itemView.findViewById((R.id.imgPrincipal));
+            imgPrincipal = itemView.findViewById(R.id.imgPrincipal);
             name = itemView.findViewById(R.id.nameTV);
             puntaje = itemView.findViewById(R.id.puntajeTV);
             iconStar = itemView.findViewById(R.id.estrella);
@@ -55,7 +56,7 @@ public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
         void bindData(final  ListElement item){
 
-
+            Glide.with(context).load(item.getImgUrl()).into(imgPrincipal);
             iconStar.setColorFilter(Color.parseColor(item.getColor()), PorterDuff.Mode.SRC_IN);
 
             name.setText(item.getName());
