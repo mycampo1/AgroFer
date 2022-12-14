@@ -32,13 +32,13 @@ public class UserFragment extends Fragment {
         //Iniciar sesión con Firebase Auth
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
-//Obtener referencia a la colección
+        //Obtener referencia a la colección
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-//Obtener referencia al documento del usuario
+        //Obtener referencia al documento del usuario
         DocumentReference docRef = db.collection("user").document(mAuth.getCurrentUser().getUid());
 
-//Obtener los datos del usuario
+        //Obtener los datos del usuario
         docRef.get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 DocumentSnapshot document = task.getResult();
