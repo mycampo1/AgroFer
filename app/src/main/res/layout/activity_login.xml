@@ -123,6 +123,7 @@
             android:layout_height="match_parent"
             android:backgroundTint="@color/md_grey_500_25"
             android:drawableLeft="@drawable/google"
+            android:onClick="btnDesarrollo"
             android:text="@string/google"
             android:textColor="@color/black" />
 
@@ -132,6 +133,7 @@
             android:layout_height="match_parent"
             android:backgroundTint="@color/md_grey_500_25"
             android:drawableLeft="@drawable/facebook"
+            android:onClick="btnDesarrollo"
             android:text="@string/facebook"
             android:textColor="@color/black" />
     </LinearLayout>
@@ -143,7 +145,6 @@
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/white"
         android:fontFamily="sans-serif-black"
-        android:onClick="login"
         android:text="@string/login"
         android:textColor="#018037"
         android:textSize="22sp"
