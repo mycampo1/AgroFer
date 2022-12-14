@@ -24,16 +24,16 @@
             android:layout_width="match_parent"
             android:layout_height="748dp"
             android:layout_above="@+id/lyBotonStatico"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="0dp">
 
         </FrameLayout>
 
         <LinearLayout
             android:id="@+id/lyBotonStatico"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="56dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="0dp"
             android:orientation="horizontal">
 
             <ImageButton

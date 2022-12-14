@@ -19,24 +19,28 @@ public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<ListElement> mData;
     private LayoutInflater mInflater;
     private Context context;
+    private List<ListElement> elements;
+
 
     public ListAdapter(List<ListElement> itemList, Context context){
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
         this.mData = itemList;
 
+
+
     }
     @Override
     public int getItemCount(){ return mData.size();}
 
     @Override
-    public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewtype){
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewtype){
         View view = mInflater.inflate(R.layout.list_element, null);
-        return new ListAdapter.ViewHolder(view);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(final ListAdapter.ViewHolder holder, final int position){
+    public void onBindViewHolder(final ViewHolder holder, final int position){
         holder.bindData(mData.get(position));
     }
 
@@ -61,6 +65,9 @@ public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
             name.setText(item.getName());
             puntaje.setText(item.getPuntaje());
+
         }
+
     }
+
 }
