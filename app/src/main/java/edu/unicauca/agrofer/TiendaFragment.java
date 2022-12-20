@@ -38,10 +38,16 @@ public class TiendaFragment extends Fragment implements SearchView.OnQueryTextLi
         lySearch = view.findViewById(R.id.lySearch);
 
         elements = new ArrayList<>();
-        elements.add(new ListElement("#775447", "Tienda agro","4.8",""));
-        elements.add(new ListElement("#FFE900", "Electroluz","5.0","https://comerciodecolombia.com/wp-content/uploads/electrl20201.jpg"));
+        elements.add(new ListElement("#008000", "DVA","4.5","https://dva.com.co/wp-content/uploads/2019/10/LOGO-DVA-fondo-azuL-200x200.jpg"));
+        elements.add(new ListElement("#FFFF00", "Agro la hacienda","3.8","http://www.agrolahacienda.com/wp-content/uploads/logo.png"));
+        elements.add(new ListElement("#FF0000", "Invesa","3.0","https://www.invesa.com/wp-content/uploads/2020/04/logo-invesa-150x66.png"));
 
-        ListAdapter listAdapter = new ListAdapter(elements, this.getContext());
+        ListAdapter listAdapter = new ListAdapter(elements, this.getContext(), new ListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+
+            }
+        });
         RecyclerView recyclerView = view.findViewById(R.id.recicleView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
@@ -65,7 +71,18 @@ public class TiendaFragment extends Fragment implements SearchView.OnQueryTextLi
                 filteredList.add(item);
             }
         }
-        ListAdapter listAdapter = new ListAdapter(filteredList, this.getContext());
+        ListAdapter listAdapter = new ListAdapter(filteredList, this.getContext(), new ListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+
+                Bundle bundle = new Bundle();
+                bundle.putString("name", elements.get(position).getName());
+                Fragment fragment = new InfoTiendaFragment();
+                fragment.setArguments(bundle);
+                getFragmentManager().beginTransaction().replace(R.id.contenedor, fragment).commit();
+
+            }
+        });
         RecyclerView recyclerView = getView().findViewById(R.id.recicleView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));

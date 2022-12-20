@@ -35,6 +35,9 @@
     <string name="usPass">Contraseña</string>
     <string name="actDatos">Actualizar datos</string>
     <string name="actPass">Actualizar contraseña</string>
+    <string name="dva">DVA</string>
+    <string name="txt1">CARPIDORA 41 SL</string>
+    <string name="text11">Carpidora 41 SL (Glyphosate). Non-selective and residual herbicide, broad spectrum, soluble concentrate (CS). Post-emergence application with actively growing weeds.</string>
 
 
 </resources>

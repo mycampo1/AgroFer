@@ -99,8 +99,8 @@
                     android:layout_height="50dp"
                     android:fontFamily="sans-serif-black"
                     android:gravity="center"
-                    android:text="@string/usPass"
                     android:inputType="textPassword"
+                    android:text="@string/usPass"
                     android:textColor="#018037"
                     android:textSize="18sp" />
 

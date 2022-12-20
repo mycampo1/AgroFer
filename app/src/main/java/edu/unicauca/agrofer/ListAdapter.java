@@ -20,13 +20,14 @@ public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private LayoutInflater mInflater;
     private Context context;
     private List<ListElement> elements;
+    private OnItemClickListener mListener;
 
 
-    public ListAdapter(List<ListElement> itemList, Context context){
+    public ListAdapter(List<ListElement> itemList, Context context, OnItemClickListener listener){
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
         this.mData = itemList;
-
+        this.mListener = listener;
 
 
     }
@@ -56,6 +57,19 @@ public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             name = itemView.findViewById(R.id.nameTV);
             puntaje = itemView.findViewById(R.id.puntajeTV);
             iconStar = itemView.findViewById(R.id.estrella);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (mListener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION) {
+                            mListener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+
         }
 
         void bindData(final  ListElement item){
@@ -68,6 +82,10 @@ public class ListAdapter  extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
         }
 
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
     }
 
 }
