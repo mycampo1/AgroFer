@@ -38,6 +38,18 @@
     <string name="dva">DVA</string>
     <string name="txt1">CARPIDORA 41 SL</string>
     <string name="text11">Carpidora 41 SL (Glyphosate). Non-selective and residual herbicide, broad spectrum, soluble concentrate (CS). Post-emergence application with actively growing weeds.</string>
+    <string name="canasta">Fragmento en desarrollo</string>
+    <string name="text2">CHOIQUE 200 SL</string>
+    <string name="text12">Choique 200 SL (Paraquat) non-selective herbicide in soluble concentrate. It attacks the green tissues of grasses or broad leaves without affecting the mature bark.</string>
+    <string name="text1000" />
+    <string name="text3">ENTRON 40</string>
+    <string name="text13">"ENTRON 40 SC is a systemic herbicide whose active ingredient is Mesotrione. It is an herbicide for the control of weeds in sugar cane crops. It is a herbicide with extensive broadleaf weed control. "</string>
+    <string name="text4">LUFKEN NT</string>
+    <string name="text14">LUFKEN nt is a selective and post-emergent hormonal herbicide for broadleaf weeds, it is recommended to apply in the following crops</string>
+    <string name="text5">NANTLI EC</string>
+    <string name="text15">Nantli EC (Amethrin + 2,4-D), selective herbicide in emulsifiable concentrate (EC). It is applied in early post-emergence on weeds 2-15 cm high. Registered against all kinds of weeds in sugar cane and corn.</string>
+    <string name="text6">SANIYA 480 SL</string>
+    <string name="text16">Saniya 480 SL (2,4-D), a highly systemic and selective hormonal herbicide against broad leaves in grass (poaceae) crops. Post-emergence application to actively growing weeds that absorb it through the foliage</string>
 
 
 </resources>

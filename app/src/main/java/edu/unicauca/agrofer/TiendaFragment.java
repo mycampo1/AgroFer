@@ -39,7 +39,7 @@ public class TiendaFragment extends Fragment implements SearchView.OnQueryTextLi
 
         elements = new ArrayList<>();
         elements.add(new ListElement("#008000", "DVA","4.5","https://dva.com.co/wp-content/uploads/2019/10/LOGO-DVA-fondo-azuL-200x200.jpg"));
-        elements.add(new ListElement("#FFFF00", "Agro la hacienda","3.8","http://www.agrolahacienda.com/wp-content/uploads/logo.png"));
+        elements.add(new ListElement("#FFFF00", "El señor agro","3.8","https://elsenoragro.com.co/wp-content/uploads/2020/03/Logo-blanco-El-se%C3%B1or-agro-1.jpg"));
         elements.add(new ListElement("#FF0000", "Invesa","3.0","https://www.invesa.com/wp-content/uploads/2020/04/logo-invesa-150x66.png"));
 
         ListAdapter listAdapter = new ListAdapter(elements, this.getContext(), new ListAdapter.OnItemClickListener() {
